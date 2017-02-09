@@ -1,3 +1,20 @@
+`` 
+located below is yaml front matter
+this block must be the first thing in your files
+we set variables in this block
+
+layout specifies the layout file to use for this post
+permalink allows us to customize the url for our post
+published allows us to set a boolean value that determines if the post will show up when the site is published
+
+we can also set custom variables in the frontmatter
+
+predefined variables for posts
+- date: overrides the date included with the name of the post
+- category/categories: specify one or more categories that the post belongs to
+- tags: behave similarly to categories
+
+``
 ---
 layout: post
 title:  "Welcome to Jekyll!"

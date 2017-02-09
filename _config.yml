@@ -1,3 +1,10 @@
+# this file stores the configuration data for our site
+# the drafts folder stores unpublished posts
+# the includes folder stores the html partials that we use to build our site
+# the layouts folder stores the templates that wrap our posts
+# the posts folder stores the content we post to the site
+# the sass folder stores the sass partials that will be imported into main.scss, which is then converted to main.css, our stylesheet for the site
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -32,3 +39,13 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  
+defaults:
+  - 
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Justice"
+      
+  
