@@ -40,6 +40,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   
+sass:
+    sass_dir: _sass
+  
 defaults:
   - 
     scope:
@@ -47,5 +50,8 @@ defaults:
       type: "posts"
     values:
       author: "Justice"
+      
+collections:
+  featured:
       
   

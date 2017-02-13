@@ -1,27 +1,14 @@
-`` 
-located below is yaml front matter
-this block must be the first thing in your files
-we set variables in this block
-
-layout specifies the layout file to use for this post
-permalink allows us to customize the url for our post
-published allows us to set a boolean value that determines if the post will show up when the site is published
-
-we can also set custom variables in the frontmatter
-
-predefined variables for posts
-- date: overrides the date included with the name of the post
-- category/categories: specify one or more categories that the post belongs to
-- tags: behave similarly to categories
-
-``
 ---
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2017-02-09 15:21:27 -0500
 categories: jekyll update
+img: /img/ricki.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. 
+
+You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
