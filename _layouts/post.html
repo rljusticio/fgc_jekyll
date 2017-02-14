@@ -1,0 +1,30 @@
+--- 
+layout: default 
+---
+
+<div class="row">
+  <div class="title">
+    <h2>{{page.title}}</h2>
+    <span class="post-info">Posted by <a href="#">Justice</a> - 2 hours ago</span>
+    <hr>
+  </div>
+
+  <div class="col l8 m12">
+    <article>
+
+      <div class="card">
+        <div class="card-image">
+          <a href="#" class="scale">
+            <div class="img img-scale">
+              <img src="{{page.img}}" alt="{{page.img_alt}}">
+            </div>
+          </a>
+          <span class="tag card-title">video</span>
+        </div>
+        <div class="card-content">
+          {{ content }}
+        </div>
+      </div>
+    </article>
+  </div>
+</div>

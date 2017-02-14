@@ -1,9 +1,8 @@
 --- 
-layout: default 
+layout: home
 title: Home Page 
 ---
-
-<div class="container content">
+<div class="container">
   <h3>Featured Posts</h3>
   <hr>
   <ul style="list-style-position: inside">
@@ -23,7 +22,7 @@ title: Home Page
             <div class="card-content">
               <span class="feat-date">{{ featured_post.date | date: "%d %B %Y" }}</span>
               <a href="#">
-                <a href="{{ post.url }}"><h5>{{ featured_post.title }}</h5></a>
+                <a href="{{ featured_post.url }}"><h5>{{ featured_post.title }}</h5></a>
               </a>
               <p>Check out the second trailer for Capcom's newly announced entry in the historic Marvel fighting game series.</p>
             </div>
@@ -46,7 +45,7 @@ title: Home Page
         <li>
           <div class="card horizontal post-preview">
             <div class="card-image img img-scale">
-              <img src="img/marvel_infinite.jpg" alt="post.img_alt">
+              <img src="{{post.img}}" alt="post.img_alt">
             </div>
             <div class="card-stacked">
               <div class="card-content">
@@ -62,5 +61,6 @@ title: Home Page
         </li>
         {% endfor %}
       </ul>
-    </div>
-  </div>
+    </div> 
+</div>
+ 
