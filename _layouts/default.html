@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+    {% include paths.html %}
     <!-- sets page encoding -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -12,10 +13,10 @@
     <title>FGC Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="/css/main.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="{{ base }}/css/main.css" media="screen,projection" />
 
     <!-- import font icons-->
-    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ base }}/assets/font-awesome/css/font-awesome.min.css">
 
 
 
@@ -25,61 +26,16 @@
 
 <body>
     <header>
-        <nav class="nav-extended">
-            <div class="nav-wrapper">
-                <div class="container">
-                    <a href="/index.html" class="brand-logo">Justice Arcade</a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="/index.html"><i class="fa fa-home"></i>Home</a></li>
-                        <li><a href="badges.html"><i class="fa fa-archive"></i>Archives</a></li>
-                        <li><a href="collapsible.html"><i class="fa fa-envelope"></i>Contact</a></li>
-                    </ul>
-                </div>
-
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
-                </ul>
-            </div>
-        </nav>
+      {% include nav.html %}
     </header>
     <div class="content container">
         {{content}}
     </div>
 
 
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l4 s12 white-text">
-                    <div class="footer-head"><span>About Justice Arcade</span>
-                        <hr>
-                    </div>
-                    <p>From your daily dose of fighting game news, to matchmaking forums, strategy guides, and more, SRK (Shoryuken) is home to the biggest community of fighting game players and enthusiasts.</p>
-                </div>
-
-                <div class="col l4 s12 white-text">
-                    <div class="footer-head"><span>Contact Us</span>
-                        <hr>
-                    </div>
-                    <p>If you would like to suggest an article, or simply tell us how awesome we are then now's your chance! We appreciate all feedback. Contact Us or Submit a Tip</p>
-                </div>
-
-                <div class="col l4 s12 white-text">
-                    <div class="footer-head"><span>Email Newsletter Coming Soon</span>
-                        <hr>
-                    </div>
-                    <p>Top fighting game headlines delivered straight to your inbox.</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">© 2017 Justice Arcade</div>
-        </div>
-    </footer>
+   {% include footer.html %}
 
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-    <script src="/assets/materialize-src/js/bin/materialize.js"></script>
+    <script src="{{ base }}/assets/materialize-src/js/bin/materialize.js"></script>
+    <script src="{{ base }}/js/init.js"></script>
 </body>

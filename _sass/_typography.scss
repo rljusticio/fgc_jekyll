@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.1;
 }
 
+
 // Header Styles
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
@@ -91,13 +92,14 @@ p {
   letter-spacing: -2px;
 }
 
-.featured h5 {
+.featured h5,
+.latest h5 {
   font-weight: 500;
   line-height: 1.25;
-  color: $secondary-color;
+  color: #000;
   margin-top: .3rem;
   transition: all .5s;
-  font-family: "Righteous", cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .featured a:hover h5 {
@@ -107,20 +109,29 @@ p {
 
 // post preview section
 .post-preview a h5 {
-  color: $secondary-color;
+  color: #000;
   text-transform: uppercase;
   transition: all .25s;
   margin-top: 0;
   line-height: 1.25;
   margin-top: -4px;
   margin-bottom: 0;
-  font-family: 'Righteous', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .feat-date,
 .post-info {
   color: #9e9e9e;
   font-weight: 800;
+}
+
+.feat-date {
+  display: block;
+}
+
+.latest .feat-date {
+  margin-top: 6px;
+  margin-bottom: 7px;
 }
 
 .post-preview a:hover h5 {
@@ -171,4 +182,18 @@ p {
 // about
 .trending h5 {
   font-family: "Righteous", cursive;
+}
+
+h3 {
+  line-height: 1.31;
+  margin-bottom: 9px;
+}
+
+.latest .card h5,
+.featured h5 {
+  line-height: 1.31;
+}
+
+.latest .card h5 {
+  margin-bottom: 10px;
 }

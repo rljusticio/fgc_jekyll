@@ -139,8 +139,9 @@
   }
 
   .card-content {
-    padding: 17px $card-padding 25px $card-padding;
+    padding: 25px $card-padding 25px $card-padding;
     border-radius: 0 0 0 0;
+    min-height: 250px;
 
     p {
       margin: 0;
@@ -236,19 +237,20 @@
 .cont {
   padding: 0 24px;
   display: block;
-  color: $whitespace;
-  background: #212121;
+  color: $secondary-color;
+  background: $whitespace;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
   height: 55px;
   line-height: 55px;
-  transition: all .5s;
+  transition: all .25s;
 }
 
 .cont:hover {
   background: $secondary-color;
+  color: $whitespace;
 }
 
 .cont i {
